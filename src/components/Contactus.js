@@ -412,7 +412,7 @@ export default function Contactus() {
                       onChange={handleInputChange}
                       className="w-5 h-5 text-slate-600 border-slate-300 rounded focus:ring-slate-500"
                     />
-                    <span className="text-slate-700">Subscribe to our newsletter for updates and course announcements</span>
+                    <span className="text-slate-1000">Subscribe to our newsletter for updates and course announcements</span>
                   </label>
 
                   <p className="text-sm text-slate-500">

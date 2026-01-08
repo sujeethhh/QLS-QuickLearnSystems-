@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Grid from "@mui/material/Grid";
+
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGooglePlusG } from "react-icons/fa";
 import { FaPaypal, FaUniversity } from "react-icons/fa";
 import { SiVisa, SiMastercard } from "react-icons/si";
@@ -34,12 +34,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#4C0519] text-white">
-      <div className="w-full px-6 sm:px-10 lg:px-20 py-12 sm:py-16">
-        <Grid container spacing={4}>
+    <footer className="bg-[#4C0519] text-white ">
+      <div className="w-full px-6 sm:px-10 lg:px-30 py-12 sm:py-16 ">
+
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+
           
           {/* Popular Courses - Column 1 */}
-          <Grid item xs={12} sm={6} lg={4}>
+          <div>
             <h3 className="text-xl font-bold text-white mb-6">Popular Courses</h3>
             <ul className="space-y-3">
               <li>
@@ -83,10 +85,10 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </Grid>
+          </div>
 
           {/* Company & Contact - Column 2 */}
-          <Grid item xs={12} sm={6} lg={4}>
+          <div>
             <h3 className="text-xl font-bold text-white mb-6">Company</h3>
             <ul className="space-y-3 mb-8">
               <li>
@@ -105,12 +107,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/quicklearn-professional-brochure.html" target="_blank" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                  Corporate Brochure
+                </Link>
+              </li>
+              <li>
                 <Link href="/Contact" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Contact Us
                 </Link>
               </li>
             </ul>
-
+<div/>
             {/* Payment Options */}
             <div>
               <h3 className="text-xl font-bold text-white mb-6">Payment Options</h3>
@@ -130,10 +137,10 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-          </Grid>
+          </div>
 
           {/* Connect With Us - Column 3 */}
-          <Grid item xs={12} sm={6} lg={4}>
+          <div >
             <h3 className="text-xl font-bold text-white mb-6">Connect With Us</h3>
             <div className="flex gap-3 mb-8">
               <a
@@ -195,10 +202,10 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-          </Grid>
+          </div>
 
 
-        </Grid>
+        </div>
         {/* Disclaimer */}
 <div className="border-t border-gray-300 mt-10 pt-6">
   <h4 className="text-sm font-semibold text-gray-200 mb-2">

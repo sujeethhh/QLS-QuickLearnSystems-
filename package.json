@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate-pdf": "node generate-pdf.js",
+    "generate-comprehensive-pdf": "node generate-comprehensive-pdf.js",
+    "generate-professional-pdf": "node generate-professional-pdf.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -24,6 +27,8 @@
     "lucide-react": "^0.544.0",
     "motion": "^12.23.18",
     "next": "^16.1.0",
+    "pdf-parse": "^2.4.5",
+    "puppeteer": "^24.34.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",

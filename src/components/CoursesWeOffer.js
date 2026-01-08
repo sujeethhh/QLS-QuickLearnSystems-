@@ -2,15 +2,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Search, BookOpen, Users, Clock, Star, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Search, Users, Clock, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 
 
 export default function CoursesWeOffer() {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Popular Courses");
   const [searchTerm, setSearchTerm] = useState("");
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const scrollRef = useRef(null);
@@ -75,6 +72,7 @@ export default function CoursesWeOffer() {
 
   // Course categories
   const categories = [
+    "Popular Courses",
     "All",
     "IT Service Management",
     "Project & Program Management",
@@ -99,7 +97,8 @@ export default function CoursesWeOffer() {
       level: "Foundation",
       students: "2.5K+",
       rating: 4.8,
-      price: 299
+      price: 299,
+      popular: true
     },
     {
       id: 2,
@@ -530,14 +529,15 @@ export default function CoursesWeOffer() {
       title: "PMP Certification",
       category: "Project & Program Management",
       subcategory: "PMI",
-      href: "/courses/pmp",
+      href: "/PMP",
       imageSrc: "/PMPC.jpg",
       description: "Project Management Professional certification for experienced project managers.",
       duration: "4 Days",
       level: "Professional",
       students: "3.2K+",
       rating: 4.9,
-      price: 599
+      price: 599,
+      popular: true
     },
     {
       id: 35,
@@ -644,14 +644,15 @@ export default function CoursesWeOffer() {
       title: "Leading SAFe Agilist",
       category: "Agile, Scrum & Kanban",
       subcategory: "SAFe",
-      href: "/courses/safe-agilist",
+      href: "/LeadingSAFeAgilist",
       imageSrc: "/SAFe.jpg",
       description: "Scale Agile practices across enterprise with SAFe framework.",
       duration: "2 Days",
       level: "Professional",
       students: "2.8K+",
       rating: 4.9,
-      price: 499
+      price: 499,
+      popular: true
     },
     {
       id: 43,
@@ -665,7 +666,8 @@ export default function CoursesWeOffer() {
       level: "Professional",
       students: "4.1K+",
       rating: 4.8,
-      price: 399
+      price: 399,
+      popular: true
     },
     {
       id: 44,
@@ -849,7 +851,8 @@ export default function CoursesWeOffer() {
       level: "Professional",
       students: "1.9K+",
       rating: 4.8,
-      price: 549
+      price: 549,
+      popular: true
     },
     {
       id: 57,
@@ -979,7 +982,8 @@ export default function CoursesWeOffer() {
       level: "Foundation",
       students: "2.7K+",
       rating: 4.8,
-      price: 299
+      price: 299,
+      popular: true
     },
     {
       id: 66,
@@ -1004,6 +1008,9 @@ export default function CoursesWeOffer() {
   if (activeFilter === "All") {
     // Show all courses when "All" is selected
     filteredCourses = courses;
+  } else if (activeFilter === "Popular Courses") {
+    // Show only popular courses when "Popular Courses" is selected
+    filteredCourses = courses.filter(course => course.popular === true);
   } else {
     // Show courses from selected category
     filteredCourses = courses.filter(course => course.category === activeFilter);
@@ -1038,7 +1045,7 @@ export default function CoursesWeOffer() {
       </h2>
 
       <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-        Advance your career with industry-leading certifications and expert-led training programs
+        Advance your career with expert-led certifications
       </p>
     </motion.div>
   </Grid>

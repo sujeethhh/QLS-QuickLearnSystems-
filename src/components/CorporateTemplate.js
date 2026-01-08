@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ScrollFloat from "@/components/ui/ScroolReveal";
 import Link from "next/link";
 import SendMessageForm from "@/components/SendMessage";
 
@@ -131,6 +130,322 @@ export default function CorporateTemplate({ courseData }) {
               </Link>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* RELATED COURSES */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto max-w-7xl px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4"
+                style={{ fontFamily: "'Playfair Display', serif" }}>
+              Popular Corporate Training Courses
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto"
+               style={{ fontFamily: "'Inter', sans-serif" }}>
+              Enhance your team's skills with our most sought-after certification programs
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Course 1 - ITIL Foundation */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/ITIL-Foundation.png"
+                  alt="ITIL 4 Foundation"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#9F2D2D] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Foundation
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3"
+                    style={{ fontFamily: "'Playfair Display', serif" }}>
+                  ITIL® 4 Foundation
+                </h3>
+                <p className="text-gray-600 text-sm mb-4"
+                   style={{ fontFamily: "'Inter', sans-serif" }}>
+                  Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                  <span>3 Days</span>
+                  <span>2.5K+ Students</span>
+                </div>
+                <Link href="/ITL4Management">
+                  <motion.button
+                    className="w-full bg-[#9F2D2D] text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    Learn More
+                  </motion.button>
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Course 2 - PMP Certification */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/PMPC.jpg"
+                  alt="PMP Certification"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#9F2D2D] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Professional
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3"
+                    style={{ fontFamily: "'Playfair Display', serif" }}>
+                  PMP Certification
+                </h3>
+                <p className="text-gray-600 text-sm mb-4"
+                   style={{ fontFamily: "'Inter', sans-serif" }}>
+                  Project Management Professional certification for experienced project managers.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                  <span>4 Days</span>
+                  <span>3.2K+ Students</span>
+                </div>
+                <Link href="/PMP">
+                  <motion.button
+                    className="w-full bg-[#9F2D2D] text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    Learn More
+                  </motion.button>
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Course 3 - Leading SAFe */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/SAFe.jpg"
+                  alt="Leading SAFe Agilist"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#9F2D2D] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Professional
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3"
+                    style={{ fontFamily: "'Playfair Display', serif" }}>
+                  Leading SAFe Agilist
+                </h3>
+                <p className="text-gray-600 text-sm mb-4"
+                   style={{ fontFamily: "'Inter', sans-serif" }}>
+                  Scale Agile practices across enterprise with SAFe framework.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                  <span>2 Days</span>
+                  <span>2.8K+ Students</span>
+                </div>
+                <Link href="/LeadingSAFeAgilist">
+                  <motion.button
+                    className="w-full bg-[#9F2D2D] text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    Learn More
+                  </motion.button>
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Course 4 - Scrum Master */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/sm1.jpg"
+                  alt="Professional Scrum Master"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#9F2D2D] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Professional
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3"
+                    style={{ fontFamily: "'Playfair Display', serif" }}>
+                  Professional Scrum Master I
+                </h3>
+                <p className="text-gray-600 text-sm mb-4"
+                   style={{ fontFamily: "'Inter', sans-serif" }}>
+                  Master Scrum framework and become an effective Scrum Master.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                  <span>2 Days</span>
+                  <span>4.1K+ Students</span>
+                </div>
+                <Link href="/PScrumM1">
+                  <motion.button
+                    className="w-full bg-[#9F2D2D] text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    Learn More
+                  </motion.button>
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Course 5 - Six Sigma Green Belt */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/green_belt.png"
+                  alt="Lean Six Sigma Green Belt"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#9F2D2D] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Professional
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3"
+                    style={{ fontFamily: "'Playfair Display', serif" }}>
+                  Lean Six Sigma Green Belt
+                </h3>
+                <p className="text-gray-600 text-sm mb-4"
+                   style={{ fontFamily: "'Inter', sans-serif" }}>
+                  Process improvement and quality management with Six Sigma methodology.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                  <span>4 Days</span>
+                  <span>1.9K+ Students</span>
+                </div>
+                <Link href="/LeanSSGB">
+                  <motion.button
+                    className="w-full bg-[#9F2D2D] text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    Learn More
+                  </motion.button>
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Course 6 - ISTQB Foundation */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/ISTQB.jpg"
+                  alt="ISTQB Foundation Level"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#9F2D2D] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Foundation
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3"
+                    style={{ fontFamily: "'Playfair Display', serif" }}>
+                  ISTQB Foundation Level
+                </h3>
+                <p className="text-gray-600 text-sm mb-4"
+                   style={{ fontFamily: "'Inter', sans-serif" }}>
+                  Software testing fundamentals and ISTQB certification.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                  <span>3 Days</span>
+                  <span>2.7K+ Students</span>
+                </div>
+                <Link href="/ISTQBF">
+                  <motion.button
+                    className="w-full bg-[#9F2D2D] text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    Learn More
+                  </motion.button>
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* View All Courses Button */}
+          
+         
         </div>
       </section>
 

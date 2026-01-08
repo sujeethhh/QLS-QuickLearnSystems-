@@ -151,25 +151,25 @@ export default function EventPageClient({ onlineEvents, events }) {
               <table className="w-full">
                 <thead className="bg-slate-50 border-b border-slate-200">
                   <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700 uppercase tracking-wide">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-1000 uppercase tracking-wide">
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" />
                         Training Name
                       </div>
                     </th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700 uppercase tracking-wide">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-1000 uppercase tracking-wide">
                       <div className="flex items-center gap-2">
                         <Clock className="w-4 h-4" />
                         Schedule Date
                       </div>
                     </th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700 uppercase tracking-wide">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-1000 uppercase tracking-wide">
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4" />
                         Location
                       </div>
                     </th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-slate-700 uppercase tracking-wide">
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-slate-1000 uppercase tracking-wide">
                       <div className="flex items-center justify-center gap-2">
                         <Users className="w-4 h-4" />
                         Select Training
@@ -219,7 +219,7 @@ export default function EventPageClient({ onlineEvents, events }) {
         </div>
       </td>
       <td className="px-6 py-4">
-        <span className="text-slate-700 font-medium">{training.date}</span>
+        <span className="text-slate-1000 font-medium">{training.date}</span>
       </td>
       <td className="px-6 py-4">
         <span className="text-slate-600">{training.location}</span>

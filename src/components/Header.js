@@ -127,7 +127,7 @@ animate-in slide-in-from-top-2 duration-100">
 ">
               QuickLearn Systems
             </span>
-            <span className="text-xs sm:text-sm text-slate-700 tracking-wide">
+            <span className="text-xs sm:text-sm text-slate-1000 tracking-wide">
                 Learn. Certify. Excel
             </span>
             </div>
@@ -144,7 +144,7 @@ animate-in slide-in-from-top-2 duration-100">
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 font-medium text-slate-700 text-sm relative">
+          <nav className="hidden md:flex items-center space-x-8 font-medium text-slate-1000 text-sm relative">
             <Link href="/" className="group-hover:text-[#7A1E2D] transition-all duration-300 py-2 px-1 relative group hover:scale-105">
               <span className="relative z-10">Home</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#7A1E2D] transition-all duration-300 group-hover:w-full"></div>
@@ -476,14 +476,14 @@ animate-in slide-in-from-top-2 duration-100">
             <div className="px-4 py-4 space-y-2">
               <Link
                 href="/"
-                className="block px-3 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300"
+                className="block px-3 py-2.5 text-slate-1000 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="block px-3 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-75"
+                className="block px-3 py-2.5 text-slate-1000 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-75"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
@@ -493,7 +493,7 @@ animate-in slide-in-from-top-2 duration-100">
               <div>
                 <button
                   onClick={() => toggleMobileSection('courses')}
-                  className="w-full flex justify-between items-center px-3 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-150"
+                  className="w-full flex justify-between items-center px-3 py-2.5 text-slate-1000 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-150"
                 >
                   <span>Courses</span>
                   <ChevronDown className={`w-4 h-4 transition-all duration-500 ${openMobileSection === 'courses' ? 'rotate-180 scale-110' : ''}`} />
@@ -796,21 +796,21 @@ animate-in slide-in-from-top-2 duration-100">
 
               <Link
                 href="/Events"
-                className="block px-3 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-300"
+                className="block px-3 py-2.5 text-slate-1000 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Events
               </Link>
               <Link
                 href="/CorporateTraining"
-                className="block px-3 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-[375ms]"
+                className="block px-3 py-2.5 text-slate-1000 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-[375ms]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Corporate Training
               </Link>
               <Link
                 href="/Contact"
-                className="block px-3 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-[450ms]"
+                className="block px-3 py-2.5 text-slate-1000 hover:bg-blue-50 hover:text-[#9F2D2D] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-[450ms]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
